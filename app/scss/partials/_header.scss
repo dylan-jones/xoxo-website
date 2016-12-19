@@ -1,0 +1,31 @@
+header {
+	width: 100%;
+	padding: 2.3rem 0; 
+
+	.container {
+		.logo {
+			width: 100%;
+			max-width: 9.5rem;
+			display: inline-block;
+		}
+
+		nav {
+			display: inline-block;
+
+			li {
+				display: inline-block;
+				font-weight: 1.3rem;
+			}
+		}
+
+		.social-media-icons {
+			display: inline-block;
+
+			a {
+				display: inline-block;
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+	}
+}

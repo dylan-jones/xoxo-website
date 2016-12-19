@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: $brand-black;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    outline: 0;
+  }
+}
+
+input:focus {
+  outline: 0;
+}
+
+::placeholder {
+  
+}
+
+p {
+  margin: 0 0 2rem;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+
+  @include breakpoint($tablet) {
+    padding-bottom: 19rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.semi {
+  font-weight: $semi;
+}
+
+.bold {
+  font-weight: $bold;
+}
